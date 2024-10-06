@@ -34,7 +34,7 @@ if not gemini_api_key:
     st.info("Please add your Gemini API key to continue.", icon="🗝️")
 else:
 
-    genai.configure(api_key="AI-xxxxxxxxxxxxxxxx")
+    genai.configure(api_key=gemini_api_key)
 
     # Let the user upload a file via `st.file_uploader`.
     uploaded_file = st.file_uploader(
